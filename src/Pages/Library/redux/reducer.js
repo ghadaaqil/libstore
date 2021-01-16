@@ -1,4 +1,5 @@
-import {SAVING_BOOKS, NAME, ADD_TO_SOPPING_BAG} from "./constants";
+import {SAVING_BOOKS, NAME} from "./constants";
+
 
 
 const initialLibraryState = {
@@ -8,16 +9,13 @@ const initialLibraryState = {
         price: null,
         synopsis: "",
         title: ""
-}],
-    shoppingBag:[],
+}]
 }
 
 const libraryReducer = (state = initialLibraryState, action) => {
     switch (action.type) {
         case SAVING_BOOKS:
             return {...state, books:[ ...action.payload]};
-        case ADD_TO_SOPPING_BAG:
-            return {...state,shoppingBag:[...state.shoppingBag,action.isbn]}
         default:
             return {...state}
     }

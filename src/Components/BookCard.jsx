@@ -3,19 +3,20 @@ import 'antd/lib/card/style/css';
 import 'antd/lib/collapse/style/css';
 import 'antd/lib/tag/style/css';
 import Meta from "antd/es/card/Meta";
-import {PlusOutlined} from "@ant-design/icons";
+import {PlusOutlined,MinusOutlined} from "@ant-design/icons";
 import Button from "./Button";
 
 const {Panel} = Collapse;
 
 const BookCard = (props) => (
-    <Col className="gutter-row" span={6}>
+    <Col className="gutter-row"  span={6}>
         <Card size="small"
+
               hoverable
               style={{width: 350}}
-              cover={<img alt="example" src={props.cover}/>}
-              actions={[
-                  <Button icon={<PlusOutlined/>} onClick={props.onClick.bind(this,props.isbn)}/>
+              cover={<img src={props.cover}/>}
+              actions={[<Button icon={<MinusOutlined />} onClick={props.onMinusClick.bind(this,props.isbn)}/>,
+                  <Button icon={<PlusOutlined/>} onClick={props.onAddClick.bind(this,props.isbn)}/>,
               ]}
         >
             <Meta title={props.title}/>

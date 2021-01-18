@@ -5,15 +5,15 @@ import 'antd/lib/tag/style/css';
 import Meta from "antd/es/card/Meta";
 import {PlusOutlined,MinusOutlined} from "@ant-design/icons";
 import Button from "./Button";
+import styled from "styled-components";
 
 const {Panel} = Collapse;
 
 const BookCard = (props) => (
-    <Col className="gutter-row"  span={6}>
+    <StyledBook>
         <Card size="small"
 
               hoverable
-              style={{width: 350}}
               cover={<img src={props.cover}/>}
               actions={[<Button icon={<MinusOutlined />} onClick={props.onMinusClick.bind(this,props.isbn)}/>,
                   <Button icon={<PlusOutlined/>} onClick={props.onAddClick.bind(this,props.isbn)}/>,
@@ -26,7 +26,19 @@ const BookCard = (props) => (
                     <p>{props.synopsis}</p>
                 </Panel>
             </Collapse>
-        </Card></Col>
+        </Card></StyledBook>
 
 )
 export default BookCard
+
+const StyledBook=styled.div`
+  .ant-card-small{
+    margin: 10px;
+    width: 250px;
+  }
+  .ant-card-meta-title{
+    font-size: small;
+    white-space:unset;
+  }
+
+` ;

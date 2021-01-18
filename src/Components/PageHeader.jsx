@@ -52,5 +52,24 @@ export default (PageHeaderCustomized);
 const StyledHeader = styled.div`
 
   margin: 4px 100px;
-
+  width: 1080px;
+  .ant-page-header-heading-title{
+    color: white;
+  }
+  .ant-input-search-button{
+    background: black;
+    border-color: black;
+  }
+  .ant-btn-icon-only{
+    background: black;
+    border-color: black;
+  }
+  .ant-btn-icon-only.ant-btn-lg {
+    width: 40px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+  .ant-page-header{
+    background-color: inherit;
+  }
 `;

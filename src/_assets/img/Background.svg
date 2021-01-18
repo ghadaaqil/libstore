@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+	<linearGradient  id="a" gradientUnits="userSpaceOnUse" x1="-207.292" y1="270.956" x2="1991.928" y2="270.956">
+		<stop offset="0" stop-color="#ff1902"/>
+		<stop offset="1" stop-color="#ff1902" stop-opacity="0"/>
+	</linearGradient>
+	<path fill="url(#a)" d="M-206.084 515.811s217.208-66.007 453.867 3l.051.015c118.716 34.611 243.627 53.152 366.838 35.887 136.417-19.115 258.875-65.218 397.701-35.334 107.947 23.237 196.916 83.712 311.488 53.499 122.896-32.409 228.996-83.684 359.183-76.458 111.262 6.176 199.042 51.051 308.884 10.389V-39.245h-2199.22l1.208 555.056z" transform="translate(89.6641 0)">
+		<animateTransform attributeName="transform" attributeType="XML" type="translate" dur="25" values="150,0;-150,0;150,0;" repeatCount="indefinite"/>
+	</path>
+	<linearGradient id="b" gradientUnits="userSpaceOnUse" x1="-306.301" y1="246.954" x2="1892.918" y2="246.954">
+		<stop offset="0" stop-color="#ff1902"/>
+		<stop offset="1" stop-color="#ff1902" stop-opacity="0"/>
+	</linearGradient>
+	<path opacity=".5" fill="url(#b)" d="M-305.094 491.808s217.208-66.007 453.867 3l.051.015c118.716 34.611 243.627 53.152 366.838 35.887 136.417-19.115 258.875-65.218 397.701-35.334 107.946 23.237 196.916 83.712 311.488 53.499 122.896-32.409 228.996-83.684 359.183-76.458 111.262 6.176 199.041 51.051 308.884 10.389V-63.247h-2199.22l1.208 555.055z" transform="translate(75.4199 0)">
+		<animateTransform attributeName="transform" attributeType="XML" type="translate" dur="20" values="150,0;-150,0;150,0;" repeatCount="indefinite"/>
+	</path>
+	<g>
+		<linearGradient id="c" gradientUnits="userSpaceOnUse" x1="-107.074" y1="237.953" x2="2090.938" y2="237.953">
+			<stop offset="0" stop-color="#ff1902"/>
+			<stop offset="1" stop-color="#ff1902" stop-opacity="0"/>
+		</linearGradient>
+		<path opacity=".5" fill="url(#c)" d="M-107.074 466.23s217.208-61.538 453.867 2.797l.051.014c118.716 32.268 243.627 49.553 366.838 33.458 136.417-17.821 258.875-60.803 397.701-32.941 107.947 21.664 196.916 78.045 311.488 49.876 122.896-30.215 228.996-78.018 359.183-71.281 111.262 5.758 199.042 47.594 308.884 9.686V-51.246l-2194.283.088-3.729 517.388z" transform="translate(-49.8134 0)">
+			<animateTransform attributeName="transform" attributeType="XML" type="translate" dur="15" values="50,0;-50,0;50,0;" repeatCount="indefinite"/>
+		</path>
+	</g>
+</svg>

@@ -30,13 +30,13 @@ const CustomDrawer = (props) => {
 
     return (
         <Drawer
-            title="Basic Drawer"
+            title="Bag"
             placement="right"
             closable={false}
             onClose={() => dispatch(showBasket(!visible))}
             visible={visible}
         >
-            <h1>TOTAL:{finalPrice}</h1>
+            <h1>TOTAL: {finalPrice}€</h1>
             {renderChoosenBooks()}
         </Drawer>)
 }

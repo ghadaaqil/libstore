@@ -73,7 +73,7 @@ const FormStyle = styled.div`
   }
 
   .ant-form-item-explain-error {
-    color: white;
+    color: darkred;
     width: 300px;
   }
 

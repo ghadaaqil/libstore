@@ -68,6 +68,7 @@ const StyledHeader = styled.div`
     width: 40px;
     font-size: 18px;
     border-radius: 12px;
+    margin-top: -5px;
   }
   .ant-page-header{
     background-color: inherit;

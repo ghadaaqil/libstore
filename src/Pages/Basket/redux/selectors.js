@@ -1,3 +1,3 @@
-import {NAME} from "./constants";
+import { NAME } from "./constants";
 
-export const getBooksInTheBasket=(state)=>state[NAME].shoppingBag;
+export const getBooksInTheBasket = (state) => state[NAME].shoppingBag;

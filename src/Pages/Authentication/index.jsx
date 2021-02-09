@@ -1,8 +1,12 @@
-import React from 'react';
+import React from "react";
 import FormWithActions from "../../Components/Form";
 import styled from "styled-components";
 
-const Authentication = () => <StyledAuthentication><FormWithActions/></StyledAuthentication>
+const Authentication = () => (
+  <StyledAuthentication>
+    <FormWithActions />
+  </StyledAuthentication>
+);
 export default Authentication;
 
 const StyledAuthentication = styled.div`
@@ -12,8 +16,5 @@ const StyledAuthentication = styled.div`
   display: flex;
   font-size: 72px;
   height: 1080px;
-  padding: 90px 100px 50px
-  
+  padding: 90px 100px 50px;
 `;
-
-

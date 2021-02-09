@@ -1,5 +1,5 @@
-import createHistory from 'history/createMemoryHistory';
+import createHistory from "history/createMemoryHistory";
 
-export const history =createHistory();
+export const history = createHistory();
 
-export const push=(url)=>history.push(url);
+export const push = (url) => history.push(url);

@@ -1,28 +1,20 @@
-import {SAVING_BOOKS, NAME} from "./constants";
-
-
+import { SAVING_BOOKS, NAME } from "./constants";
 
 const initialLibraryState = {
-    books: [{
-        over: "",
-        isbn: "",
-        price: null,
-        synopsis: "",
-        title: ""
-}]
-}
+  books: [],
+};
 
 const libraryReducer = (state = initialLibraryState, action) => {
-    switch (action.type) {
-        case SAVING_BOOKS:
-            return {...state, books:[ ...action.payload]};
-        default:
-            return {...state}
-    }
+  switch (action.type) {
+    case SAVING_BOOKS:
+      return { ...state, books: [...action.payload] };
+    default:
+      return { ...state };
+  }
 };
 const reducerWrapper = {
-    [NAME]: libraryReducer
+  [NAME]: libraryReducer,
 };
-export {initialLibraryState, libraryReducer};
+export { initialLibraryState, libraryReducer };
 
 export default reducerWrapper;

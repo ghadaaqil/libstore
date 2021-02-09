@@ -1,3 +1,7 @@
+import { render } from '@testing-library/react';
+import React from 'react';
+import { Provider } from 'react-redux';
+
 export const calculateInitialPrice = (books, isbnIterations) => {
     let initialPrice = 0;
     books.forEach(elmt => initialPrice += elmt.price * isbnIterations[elmt.isbn])
@@ -36,3 +40,10 @@ export const calculatePromotionalPrice = (offers, initialPrice) => {
     })
     return Math.min(priceMin,priceSL,pricePer,price);
 }
+
+export const renderWithRedux = (
+    component,
+    store
+) => {
+    return render(<Provider store={store}>{component}</Provider>);
+};

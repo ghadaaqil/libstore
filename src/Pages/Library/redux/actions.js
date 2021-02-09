@@ -1,8 +1,6 @@
-import {SAVING_BOOKS} from "./constants";
+import { SAVING_BOOKS } from "./constants";
 
-export const saveBooks=(payload)=>({
-    type:SAVING_BOOKS,
-    payload
-})
-
-
+export const saveBooks = (payload) => ({
+  type: SAVING_BOOKS,
+  payload,
+});

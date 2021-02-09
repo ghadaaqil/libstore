@@ -12,7 +12,6 @@ const {Panel} = Collapse;
 const BookCard = (props) => (
     <StyledBook>
         <Card size="small"
-
               hoverable
               cover={<img src={props.cover}/>}
               actions={[<Button icon={<MinusOutlined />} onClick={props.onMinusClick.bind(this,props.isbn)}/>,
